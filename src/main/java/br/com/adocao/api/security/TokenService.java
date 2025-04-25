@@ -1,6 +1,6 @@
 package br.com.adocao.api.security;
 
-import br.com.adocao.api.entity.UserModel;
+import br.com.adocao.api.entity.user.UserModel;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;

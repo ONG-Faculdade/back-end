@@ -1,8 +1,8 @@
 package br.com.adocao.api.security;
 
-import br.com.adocao.api.entity.UserModel;
+import br.com.adocao.api.entity.user.UserModel;
 import br.com.adocao.api.exceptions.EventNotFoundException;
-import br.com.adocao.api.repository.IUserRepository;
+import br.com.adocao.api.repository.user.IUserRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

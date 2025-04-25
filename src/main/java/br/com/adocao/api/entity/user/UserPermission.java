@@ -1,4 +1,4 @@
-package br.com.adocao.api.entity;
+package br.com.adocao.api.entity.user;
 
 public enum UserPermission {
 

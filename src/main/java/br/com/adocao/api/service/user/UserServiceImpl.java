@@ -1,17 +1,14 @@
-package br.com.adocao.api.service;
+package br.com.adocao.api.service.user;
 
 import br.com.adocao.api.dto.TokenResponseDTO;
 import br.com.adocao.api.dto.user.*;
-import br.com.adocao.api.entity.UserModel;
-import br.com.adocao.api.entity.UserPermission;
-import br.com.adocao.api.exceptions.EventBadRequestException;
-import br.com.adocao.api.exceptions.EventInternalServerErrorException;
+import br.com.adocao.api.entity.user.UserModel;
+import br.com.adocao.api.entity.user.UserPermission;
 import br.com.adocao.api.exceptions.EventNotFoundException;
-import br.com.adocao.api.repository.IUserRepository;
+import br.com.adocao.api.repository.user.IUserRepository;
 import br.com.adocao.api.security.TokenService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.orm.jpa.JpaSystemException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

@@ -1,4 +1,4 @@
-package br.com.adocao.api.entity;
+package br.com.adocao.api.entity.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

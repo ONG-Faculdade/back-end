@@ -1,6 +1,6 @@
-package br.com.adocao.api.repository;
+package br.com.adocao.api.repository.user;
 
-import br.com.adocao.api.entity.UserModel;
+import br.com.adocao.api.entity.user.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,9 +1,7 @@
 package br.com.adocao.api.controller;
 
 import br.com.adocao.api.dto.user.*;
-import br.com.adocao.api.service.IUserService;
-import br.com.adocao.api.service.UserServiceImpl;
-import lombok.RequiredArgsConstructor;
+import br.com.adocao.api.service.user.UserServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +17,6 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterUserRequestDTO dto) {
-        System.out.println(dto);
         return userService.registerUser(dto);
     }
 
@@ -38,7 +35,7 @@ public class UserController {
         return userService.findByEmail(email);
     }
 
-    @PutMapping("/edit-permission/{email}")
+    @PutMapping("/permission/{email}")
     public ResponseEntity<?> editPermission(@PathVariable String email, @RequestBody UserEditTypeRequestDTO dto) {
         return userService.editPermission(email, dto);
     }

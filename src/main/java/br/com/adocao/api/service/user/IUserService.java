@@ -1,8 +1,7 @@
-package br.com.adocao.api.service;
+package br.com.adocao.api.service.user;
 
-import br.com.adocao.api.dto.TokenResponseDTO;
 import br.com.adocao.api.dto.user.*;
-import br.com.adocao.api.entity.UserModel;
+import br.com.adocao.api.entity.user.UserModel;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
