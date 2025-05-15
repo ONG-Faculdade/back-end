@@ -20,6 +20,11 @@ public class UserController {
         return userService.registerUser(dto);
     }
 
+    @GetMapping("/helloworld")
+    public ResponseEntity<?> HelloWorld(){
+        return ResponseEntity.ok("HelloWorld");
+    }
+
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequestDTO dto) {
         return userService.login(dto);

@@ -32,6 +32,7 @@ public class SecurityConfig {
                         // Permissions for authentication (login and registration)
                         .requestMatchers(HttpMethod.POST, "/user/register").permitAll()
                         .requestMatchers(HttpMethod.POST, "/user/login").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/user/helloworld").permitAll()
 
                         // Animal-related routes
                         .requestMatchers(HttpMethod.POST, "/animal/register").hasRole("ADMIN")

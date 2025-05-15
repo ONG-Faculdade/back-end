@@ -51,7 +51,6 @@ public class UserServiceImpl implements IUserService {
         UserModel user = new UserModel();
         user.setName(request.name());
         user.setEmail(request.email());
-        user.setBirthDate(request.birthDate());
         user.setPasswordHash(passwordEncoder.encode(request.passwordHash()));
 
         repository.save(user);
@@ -118,7 +117,6 @@ public class UserServiceImpl implements IUserService {
 
         user.setName(request.name());
         user.setEmail(request.email());
-        user.setBirthDate(request.birthDate());
 
         repository.save(user);
         return ResponseEntity.ok(new UpdateUserResponseDTO(HttpStatus.OK, "Usuário atualizado com sucesso."));

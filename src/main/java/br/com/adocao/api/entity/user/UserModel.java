@@ -32,9 +32,6 @@ public class UserModel implements UserDetails {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "birth_date", nullable = false)
-    private LocalDate birthDate;
-
     @Column(name = "password_hash", nullable = false)
     private String passwordHash;
 
